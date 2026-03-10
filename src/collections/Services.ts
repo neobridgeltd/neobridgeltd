@@ -9,6 +9,12 @@ export const Services: CollectionConfig = {
     description: 'Add Service',
     group: 'Services',
   },
+  access: {
+    read: () => true,
+    delete: () => true,
+    update: () => true,
+    create: () => true,
+  },
   fields: [
     {
       name: 'title',
