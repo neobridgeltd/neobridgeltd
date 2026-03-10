@@ -12,6 +12,12 @@ import type { CollectionConfig } from 'payload'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
+  access: {
+    read: () => true,
+    delete: () => true,
+    update: () => true,
+    create: () => true,
+  },
 
   fields: [
     {

@@ -15,6 +15,9 @@ const Blog: CollectionConfig = {
   },
   access: {
     read: () => true,
+    delete: () => true,
+    update: () => true,
+    create: () => true,
   },
   versions: {
     drafts: true,

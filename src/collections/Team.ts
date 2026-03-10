@@ -8,6 +8,12 @@ export const Team: CollectionConfig = {
     description: 'Add Team Member',
     group: 'Team Collection',
   },
+  access: {
+    read: () => true,
+    delete: () => true,
+    update: () => true,
+    create: () => true,
+  },
   fields: [
     {
       name: 'name',
