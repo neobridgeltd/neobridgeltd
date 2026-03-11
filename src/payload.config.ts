@@ -33,6 +33,7 @@ export default buildConfig({
   editor: lexicalEditor(),
   serverURL: process.env.NEXT_PUBLIC_PAYLOAD_URL,
   // serverURL: 'http://localhost:3000',
+  cors: process.env.NEXT_PUBLIC_PAYLOAD_URL ? [process.env.NEXT_PUBLIC_PAYLOAD_URL] : undefined,
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
