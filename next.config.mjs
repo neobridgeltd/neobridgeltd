@@ -19,6 +19,10 @@ const nextConfig = {
       {
         protocol:'https',
         hostname:'neobridgeltd-gilt.vercel.app'
+      },
+      {
+        protocol:'https',
+        hostname:'neobridgeltd.co.ke'
       }
     
     ]
