@@ -22,7 +22,15 @@ const nextConfig = {
       },
       {
         protocol:'https',
-        hostname:'neobridgeltd.co.ke'
+        hostname:'www.neobridgeltd.co.ke'
+      },
+      {
+        protocol:'https',
+        hostname:'neobridgeltd.co.ke'  
+      },
+      {
+        protocol:'https',
+        hostname:'neobridgeltd.co.ke/api/**'
       }
     
     ]
