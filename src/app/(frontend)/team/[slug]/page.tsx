@@ -87,6 +87,7 @@ export default async function TeamDescription({ params }: { params: Promise<{ sl
 
   const relatedMembers = await fetchRelatedMembers(slug)
   const descriptionParagraphs = team_member.bio.split('\n')
+  console.log('Related Members:', relatedMembers)
 
   return (
     <section className="bg-white min-h-screen relative overflow-hidden py-20">
