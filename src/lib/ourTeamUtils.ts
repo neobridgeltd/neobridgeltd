@@ -20,7 +20,7 @@ export async function fetchRelatedMembers(currentSlug: string) {
   const payload = await getPayload({ config: payloadConfig })
   const { docs: teamMembers } = await payload.find({
     collection: 'team',
-    depth: 1,
+    depth: 4,
     limit: 3,
     where: {
       slug: {

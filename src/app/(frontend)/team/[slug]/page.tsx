@@ -28,25 +28,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!profile) {
     return {
-      title: 'Team Member Not Found – Vivid Analytics',
+      title: 'Team Member Not Found – NeoBridge',
       description:
-        'The team member you are looking for could not be found. Meet the experts behind Vivid Analytics and explore their roles in driving data strategy and innovation.',
+        'The team member you are looking for could not be found. Meet the professionals at NeoBridge driving financial advisory, capital raising, and strategic growth across Africa.',
     }
   }
 
-  const memberName = profile.name || 'Team Member – Vivid Analytics'
+  const memberName = profile.name || 'Team Member – NeoBridge'
   const memberBio =
     profile.bio ||
-    'Meet a key expert from Vivid Analytics. Learn how their skills and vision contribute to transforming data into strategic action.'
+    'Meet a key professional at NeoBridge. Discover how their expertise supports financial advisory, capital raising, and strategic transactions across African markets.'
 
   return {
-    title: `${memberName} – Vivid Analytics`,
+    title: `${memberName} – NeoBridge`,
     description: memberBio,
-    metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_PAYLOAD_URL}`),
     openGraph: {
-      title: `${memberName} – Vivid Analytics`,
+      title: `${memberName} – NeoBridge`,
       description: memberBio,
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/team/${slug}`,
+      url: `${process.env.NEXT_PUBLIC_PAYLOAD_URL}/team/${slug}`,
       images: [
         {
           url:
@@ -55,13 +55,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
               : '/officialLogo.png',
           width: 1200,
           height: 630,
-          alt: profile.name || 'Vivid Analytics Team',
+          alt: profile.name || 'NeoBridge Team',
         },
       ],
       type: 'profile',
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/team/${slug}`,
+      canonical: `${process.env.NEXT_PUBLIC_PAYLOAD_URL}/team/${slug}`,
     },
   }
 }

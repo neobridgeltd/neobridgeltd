@@ -102,7 +102,7 @@ const Footer = () => {
                   <Mail className="h-5 w-5 text-white" />
                 </div>
                 <p className="text-gray-300 group-hover:text-white transition-colors">
-                  service@neobridgeltd.com
+                  service@neobridgeltd.co.ke
                 </p>
               </div>
             </div>
@@ -118,7 +118,6 @@ const Footer = () => {
               {[
                 { href: '/who-we-are', label: 'About Us' },
                 { href: '/what-we-offer', label: 'What We Offer' },
-                { href: '/modular-services', label: 'Modular Services' },
                 { href: '/contact-us', label: 'Contact Us' },
               ].map((link, index) => (
                 <li key={index}>

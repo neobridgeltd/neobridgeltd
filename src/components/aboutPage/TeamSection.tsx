@@ -134,7 +134,7 @@ export default function TeamSection({ block }: TeamBlockProps) {
                               src={member.photo.url}
                               alt={member.name}
                               fill
-                              className="object-cover"
+                              className="object-cover object-top"
                             />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center bg-[#f0f5f9] text-[#7aa4c3]">

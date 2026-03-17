@@ -157,7 +157,7 @@ export default async function PublicationPage({ params }: { params: Promise<{ sl
                     <div className="relative z-10">
                       <RichText
                         data={post.description}
-                        className="richtext text-justify text-lg leading-relaxed"
+                        className="richtext text-left text-lg leading-relaxed"
                       />
                     </div>
                   </div>

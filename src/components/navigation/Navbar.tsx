@@ -61,13 +61,6 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="/modular-services"
-              className="text-[#041740] hover:text-slate-900 flex items-center space-x-1 font-medium"
-            >
-              <span>Modular Services</span>
-            </Link>
-
-            <Link
               href="/contact-us"
               className="bg-[#041740] text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-all font-medium"
             >

@@ -213,7 +213,7 @@
   color: #4b5563;
   margin-bottom: 1.5rem;
   font-size: clamp(1rem, 2vw, 1.125rem);
-  text-align: justify;
+  text-align: left;
 }
 
 .richtext p:first-of-type {
@@ -254,7 +254,7 @@
 /* Custom list styling */
 .richtext ul,
 ol {
-  list-style: none;
+  list-style:disc;
   margin: 1.5rem 0;
   padding-left: 0;
 }
